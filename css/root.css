@@ -1,0 +1,18 @@
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root{
+
+
+
+    --roxo: #6e258f;
+    --carmim: #813644;
+    --branco-fundo: #ffffff;
+    
+
+    --gradiente-principal: linear-gradient(135deg, var(--roxo), var(--carmim));
+    --fonte-titulo: 
+}

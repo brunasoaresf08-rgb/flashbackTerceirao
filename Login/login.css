@@ -1,0 +1,153 @@
+@import url('../css/root.css');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+
+}
+
+/* CONTAINER */
+
+.login-container{
+
+background:white;
+
+width:360px;
+
+padding:50px 40px;
+
+border-radius:16px;
+
+text-align:center;
+
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+
+}
+
+/* LOGO */
+
+.logo{
+width:90px;
+margin-bottom:15px;
+}
+
+/* TITULO */
+
+.login-container h1{
+
+
+
+font-size:18px;
+
+color:black;
+
+margin-bottom:25px;
+
+}
+
+/* FORM */
+
+.login-box{
+
+display:flex;
+flex-direction:column;
+gap:16px;
+
+}
+
+/* INPUTS */
+
+.login-box input{
+
+padding:14px 18px;
+
+border-radius:50px;
+
+border:1px solid #ddd;
+
+background:#f7f7f7;
+
+outline:none;
+
+transition:0.3s;
+
+}
+
+.login-box input:focus{
+
+border:1px solid var(--roxo);
+
+background:white;
+
+}
+
+/* BOTÃO */
+
+.btn-login{
+
+padding:14px;
+
+border:none;
+
+border-radius:50px;
+
+background:var(--gradiente-principal);
+
+color:white;
+
+font-weight:bold;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.btn-login:hover{
+
+transform:translateY(-2px);
+
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+
+}
+
+/* TEXTO EXTRA */
+
+.extra{
+
+margin-top:10px;
+
+font-size:14px;
+
+color:#555;
+
+}
+
+.extra a{
+
+color:var(--roxo);
+
+text-decoration:none;
+
+font-weight:bold;
+
+}
+
+.extra a:hover{
+
+text-decoration:underline;
+
+}
