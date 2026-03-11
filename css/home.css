@@ -1,4 +1,7 @@
+
+
 @import url('./root.css');
+
 
 *{
     margin:0;
@@ -12,6 +15,7 @@ body{
     color:#222;
    opacity:0;
 transition:opacity 1s ease;
+scroll-behavior: smooth;
 }
 
 .fade-out{
@@ -516,6 +520,7 @@ pointer-events:all;
 
 .galeria{
     padding:80px 60px;
+    height: 100vh;
 }
 
 .galeria h2{
@@ -540,6 +545,77 @@ pointer-events:all;
 
     border-radius:10px;
 
+}
+
+.galeria{
+    
+     width: 100%;
+  max-width: 1200px; /* opcional */
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+}
+
+.carousel {
+    /* ... */
+    &:hover .group {
+      animation-play-state: paused;
+    }
+  }
+
+ .carousel {
+    cursor:grabbing;
+  margin: 0;
+  padding: 20px 0;
+  max-width:100%;
+  overflow: hidden;
+  display: flex;
+ 
+  
+}
+
+
+
+.card {
+  width: 300px;
+  color: white;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+  padding: 20px;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+  min-height: 375px;
+}
+
+/* cores dos cards */
+.card:nth-child(1) {
+  background: var(--gradiente-principal);
+}
+
+.card:nth-child(2) {
+  background: var(--gradiente-principal);
+}
+
+.card:nth-child(3) {
+  background: var(--gradiente-principal);
+}
+
+.group {
+  display: flex;
+  gap: 20px;
+  will-change: transform;
+  padding-right: 20px;
+  animation: scrolling 10s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 footer{
